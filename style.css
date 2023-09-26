@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    transition: 0.2s;
+}
+
+body {
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-size: 12px 12px;
+    background-image:  repeating-linear-gradient(0deg, #f4f4f4, #f4f4f4 0.6000000000000001px, #ffffff 0.6000000000000001px, #ffffff);
+    overflow-y: hidden;
+}
+
+.m-wrapper {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.in-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz-img {
+    width: 24em;
+    margin: 2em;
+}
+
+.quiz-title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 4em;
+}
+
+.quiz-desc {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.ready {
+    font-family: 'Roboto', sans-serif;
+    color: green;
+    font-size: 4em;
+}
+
+input {
+    background: 0;
+    border: 0;
+    outline: none;
+    width: 80vw;
+    max-width: 400px;
+    font-size: 1.5em;
+    transition: padding 0.3s 0.2s ease;
+    text-align: center;
+}
+input:focus {
+    padding-bottom: 5px;
+}
+input:focus + .line:after {
+    transform: scaleX(1);
+}
+.answer-field {
+    position: relative;
+    margin-bottom: 2em;
+}
+.answer-field .line {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    background: #bdc3c7;
+}
+.answer-field .line:after {
+    content: " ";
+    position: absolute;
+    float: right;
+    width: 100%;
+    height: 3px;
+    transform: scalex(0);
+    transition: transform 0.3s ease;
+    background: #1abc9c;
+}
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
