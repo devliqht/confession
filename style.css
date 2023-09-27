@@ -37,18 +37,21 @@ body {
 .quiz-title {
     font-family: 'Lexend', sans-serif;
     font-size: 4em;
+    text-align: center;
 }
 
 .quiz-desc {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.6em;
     font-weight: 400;
+    text-align: center;
 }
 
 .ready {
     font-family: 'Roboto', sans-serif;
     color: green;
     font-size: 4em;
+    text-align: center;
 }
 
 input {
