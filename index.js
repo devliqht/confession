@@ -231,6 +231,8 @@ var round = 1;
                 $("#quiz-title").text("Nyla, I like you.");
                 $("#quiz-desc").text("Pwede ba kitang liligawan?");
                 $("#input-field").text("UwU");
+                var audio = document.getElementById("audio");
+                audio.play();
                 $("#next-btn").click(function(){
                     if (hasWon10 == false) {
                         var answer = $("#input-field").val();
